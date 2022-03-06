@@ -1,0 +1,191 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div id="main">
+<div class="first">
+ <img src="logo.png" alt="LOGO">
+ <p id="logofont">Online-pasal</p>
+
+ <div class="search-container">
+ <form>
+ <input type="text" placeholder="Search.." name="search">
+ <button type="submit"><i class="fa fa-search"></i></button>
+ </form>
+ </div>
+ <div class="icon">
+ <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+</div>
+ <div class="overlay-form">
+  <div class="close-btn" onclick="toggleForm()">&times;</div>
+  <h1>Create a new account</h1>
+  <p>Join our community. Let's set up your account</p>
+  <div class="form-element">
+    <label for="fullname">Fullname</label>
+    <input type="text" id="fullname">
+  </div>
+  <div class="form-element">
+    <label for="email">Email</label>
+    <input type="email" id="email">
+  </div>
+  <div class="form-element">
+    <label for="password-1">Password</label>
+    <input type="password" id="password-1">
+  </div>
+  <div class="form-element">
+    <label for="password-2">Confirm password</label>
+    <input type="password" id="password-2">
+  </div>
+  <div class="form-element">
+    <button>Signup</button>
+  </div>
+</div>
+<div class="center">
+  <button onclick="toggleForm()">Signup</button>
+</div>
+</div>
+<div class="second">
+ <div class="types">Electronics</div>
+ <div class="types">Health and Beauty</div>
+ <div class="types">Men's Fashion</div>
+ <div class="types">Women's Fashion</div>
+ <div class="types">Sports</div>
+ <div class="types">Groceries</div>
+ <div class="deals rounded-border">
+ <h1 class="deals-title">Hot deals</h1>
+ <p class="details">Winter Sale!!! UPTO 50% OFF</p>
+ <p class="collapse details hide" id='deals'>WINTER SALE!!!<br><br> Buy winter clothes, shoes and other items with upto 50% off. <br><br>Hurry up and start
+ shopping! Offer till Feburary 28</p>
+ <button class="btn-deals rounded-border" onclick="DealsDescriptionToggle()"
+ id='dealsBtn'>More</button>
+ </div>
+</div>
+
+<div class ="third">
+ <div id="image">
+<div class="ribbon">
+   <img src="Rib.png" >
+</div>
+   <img class="mySlides" src="download.jpg" width="650px" height="100px">
+  <img class="mySlides" src="images.jpg" width="650px" height="100px">
+ </div>
+ <div class="item">
+<a href="item1.html">
+ <div class="overflow-hidden rounded-border">
+ <img class="imagee" src="watch.jpeg" alt="watch" width="135px" height="175px"></div></a>
+ <p id="imagetext">Casual watch <br><br>RS.2000</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="watch.jpeg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="watch.jpeg" alt="watch" width="135px" height="175px"></div></a>
+ <p id="imagetext">Casual watch <br><br>RS.2000</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="watch.jpeg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="watch.jpeg" alt="watch" width="135px" height="175px"></div></a>
+ <p id="imagetext">Casual watch <br><br>RS.2000</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="watch.jpg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="watch.jpeg" alt="watch" width="135px" height="175px"></div></a>
+ <p id="imagetext">Casual watch  <br><br>RS.2,000</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="mobile.jpg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="mobile.jpeg" alt="mobile" width="135px" height="175px"></div></a>
+ <p id="imagetext">Poco-X3 <br><br>RS.27,999</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="mobile.jpg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="mobile.jpeg" alt="mobile" width="135px" height="175px"></div></a>
+ <p id="imagetext">Poco-X3 <br><br>RS.31,999</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="mobile.jpg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="mobile.jpeg" alt="mobile" width="135px" height="175px"></div></a>
+ <p id="imagetext">Poco-X3 <br><br>RS.33,999</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="mobile.jpg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="mobile.jpeg" alt="mobile" width="135px" height="175px"></div></a>
+ <p id="imagetext">Poco-X3<br><br>RS.35,999</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="pic2.jpg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="pic2.jpeg" alt="Vans" width="135px" height="175px"></div></a>
+ <p id="imagetext">Old School Vans <br><br>RS.2,500</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="pic2.jpg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="pic2.jpeg" alt="Vans" width="135px" height="175px"></div></a>
+ <p id="imagetext">Old School Vans<br><br>RS.2,500</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="pic2.jpg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="pic2.jpeg" alt="Vans" width="135px" height="175px"></div></a>
+ <p id="imagetext">Old School Vans<br><br>RS.2,500</p>
+ </div>
+ <div class="item">
+ <a target="_blank" href="pic2.jpg">
+ 	<div class="overflow-hidden rounded-border">
+ <img src="pic2.jpeg" alt="Vans" width="135px" height="175px"></div></a>
+ <p id="imagetext">Old School Vans<br><br>RS.2,500</p>
+ </div>
+</div>
+<div id="fourth">
+</div>
+</div>
+<script>
+ var dealsBtn = ['More', 'Less'];
+ var description = false;
+ function DealsDescriptionToggle() {
+ var dealsButton = document.getElementById('dealsBtn');
+ if (!description) {
+ document.getElementById('deals').className = "collapse details show";
+ dealsButton.innerHTML = dealsBtn[1];
+ description = true;
+ }
+ else {
+ document.getElementById('deals').className = "collapse details hide";
+ dealsButton.innerHTML = dealsBtn[0];
+ description = false;
+ }
+ }
+ var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+function toggleForm(){
+  document.body.classList.toggle('activeForm');
+}
+ </script>
+</body>
+</html>
+

@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="main">
+<div class="first">
+ <img src="logo.png" alt="LOGO">
+ <p id="logofont">LOGO NAME</p>
+ <div class="search-container">
+ <form>
+ <input type="text" placeholder="Search.." name="search">
+ <button type="submit"><i class="fa fa-search"></i></button>
+ </form>
+ </div>
+ <div class="icon">
+ <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+</div>
+</div>
+<div class="second">
+ <div class="types">Electronics</div>
+ <div class="types">Health and Beauty</div>
+ <div class="types">Men's Fashion</div>
+ <div class="types">Women's Fashion</div>
+ <div class="types">Sports</div>
+ <div class="types">Groceries</div>
+ <div class="deals rounded-border">
+ <h1 class="deals-title">Hot deals</h1>
+ <p class="details">Winter Sale!!! UPTO 50% OFF</p>
+ <p class="collapse details hide" id='deals'>WINTER SALE!!!<br><br> Buy winter
+clothes, shoes and
+ other cosmetics items with upto 50% off. <br><br>Hurry up and start
+ shopping! Offer till Feburary 28</p>
+ <button class="btn-deals rounded-border" onclick="DealsDescriptionToggle()"
+ id='dealsBtn'>More</button>
+ </div>
+</div>
+<div class ="third">
+ <div id="image">
+ </div>
+ <div id="item1image">
+ <div class="overflow-hidden rounded-border">
+ <img class="imagee" src="watch.jpeg" alt="watch" width="250px" height="250px"></a>
+ </div>
+ </div>
+ <div id="item1info">
+ <h2><p id="imagetext">Casual watch for men <br> Top Brand Luxury
+Copper Fashion<br> Business Casual Premium Pretty <br>Waterproof Warranty
+<br>Wristwatch Watch For men<br><br>RS.2000</p></h2>
+ </div>
+ <div class="addtocart">
+ <button type="submit" class="button1" ><b>Buy Now</b></button>
+ <button type="submit" class="button1" ><b>Add to Cart</b></button>
+ </div>
+ <div class="otherinfo">
+ Product details of Casual watch  Casual Premium Pretty Waterproof Warranty
+ <ul>
+<li>100% genuine (The SELLER guarantees the authenticity of the product)</li>
+<li>Brand/Series : Vincero 9192</li>
+<li>Model Number : 9192</li>
+<li>For: Mens</li>
+<li>Water Resistance: 30M water resistance, convenient for daily life</li>
+<li>Features: Date/Day Function</li>
+<li>Movement : Quartz</li>
+<li>Display Type : Analog</li>
+<li>Dial Window Material Type: Glass</li>
+<li>Case Material: Stainless Steel</li>
+<li>Dial Color: Beige</li>
+<li>Case Diameter: 32mm</li>
+<li>Case Thickness: 9mm</li>
+<li>Case Shape: Round</li>
+<li>Strap Material:Leather</li>
+<li>Band Length: 230mm</li>
+<li>Band Width: 11mm</li>
+<li>Strap Color: Brown</li>
+<li>Clasp Type: Pin Buckle</li>
+<li>1 Year Warranty on Machinery Part</li>
+</ul>
+</div>
+
+</div>
+<div id="fourth">
+</div>
+</div>
+<script>
+ var dealsBtn = ['More', 'Less'];
+ var description = false;
+ function DealsDescriptionToggle() {
+ var dealsButton = document.getElementById('dealsBtn');
+ if (!description) {
+Lab 13
+7
+ document.getElementById('deals').className = "collapse details show";
+ dealsButton.innerHTML = dealsBtn[1];
+ description = true;
+ }
+ else {
+ document.getElementById('deals').className = "collapse details hide";
+ dealsButton.innerHTML = dealsBtn[0];
+ description = false;
+ }
+ }
+ </script>
+</body>
+</html>
